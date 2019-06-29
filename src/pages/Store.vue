@@ -19,15 +19,15 @@ export default {
   data: () => ({
     products: [
       {
-        title: 'Test Title',
+        title: 'Test Title 1',
         img: 'https://via.placeholder.com/150'
       },
       {
-        title: 'Test Title',
+        title: 'Test Title 2',
         img: 'https://via.placeholder.com/150'
       },
       {
-        title: 'Test Title',
+        title: 'Test Title 3',
         img: 'https://via.placeholder.com/150'
       }
     ]

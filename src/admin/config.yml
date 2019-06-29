@@ -1,0 +1,17 @@
+backend:
+  name: github
+  repo: lyonsbp/gridsome-snipcart
+
+media_folder: 'static/uploads'
+public_folder: '/uploads'
+
+collections:
+  - name: 'products'
+    label: 'Products'
+    folder: 'products'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Image', name: 'image', widget: 'image' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
