@@ -1,8 +1,10 @@
 <template>
   <div class="products">
     <div v-for="edge in $page.products.edges" :key="edge.node.id" class="product--container">
-      <span class="product--title" v-text="edge.node.title"></span>
-      <img :src="edge.node.image" />
+      <h2 class="product--title" v-text="edge.node.title"></h2>
+      <g-link :to="edge.node.path">
+        <img :src="edge.node.image" />
+      </g-link>
     </div>
   </div>
 </template>
@@ -14,6 +16,7 @@ query Products {
       node {
         id
         title
+        path
         image
         content
       }
@@ -33,8 +36,6 @@ export default {
 </script>
 
 <style>
-.product {
-  margin-left: 1em;
-  margin-right: 1em;
+.product--title {
 }
 </style>
