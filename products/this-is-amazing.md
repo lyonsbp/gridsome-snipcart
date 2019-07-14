@@ -1,6 +1,9 @@
 ---
 title: This is amazing
 image: /uploads/surprised-pika.png
+price: 9
+tags:
+  - one
+  - three
 ---
-## _Markdown me daddy_
-
+## _Desc._
