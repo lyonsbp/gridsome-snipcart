@@ -7,6 +7,7 @@
       <nav class="nav">
         <g-link class="nav__link" to="/">Home</g-link>
         <g-link class="nav__link" to="/store">Store</g-link>
+        <a class="nav__link snipcart-checkout">Cart</a>
       </nav>
     </header>
     <slot />
