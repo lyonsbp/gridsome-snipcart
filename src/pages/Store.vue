@@ -12,7 +12,7 @@
           :data-item-url="edge.node.path"
           :data-item-name="edge.node.title"
           :data-item-image="edge.node.image"
-          data-item-price="10.00"
+          :data-item-price="edge.node.price"
         >Add to Cart</button>
       </div>
     </div>
@@ -27,6 +27,7 @@ query Products {
         id
         title
         path
+        price
         image
         content
       }

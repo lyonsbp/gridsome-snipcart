@@ -10,7 +10,7 @@
         :data-item-url="$page.product.path"
         :data-item-name="$page.product.title"
         :data-item-image="$page.product.image"
-        data-item-price="10.00"
+        :data-item-price="$page.product.price"
       >Add to Cart</button>
     </div>
   </Layout>
@@ -21,6 +21,7 @@ query Product($id: String!) {
   product: product(id: $id) {
     id
     path
+    price
     title
     image
     content
