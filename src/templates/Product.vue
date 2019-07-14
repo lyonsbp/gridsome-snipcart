@@ -1,9 +1,11 @@
 <template>
-  <div class="product--container">
-    <h2 class="product--title" v-text="$page.product.title"></h2>
-    <img :src="$page.product.image" />
-    <span v-html="$page.product.content"></span>
-  </div>
+  <Layout>
+    <div class="product--container">
+      <h2 class="product--title" v-text="$page.product.title"></h2>
+      <img :src="$page.product.image" width="250px" />
+      <span v-html="$page.product.content"></span>
+    </div>
+  </Layout>
 </template>
 
 <page-query>
