@@ -2,7 +2,7 @@
   <Layout>
     <div class="product--container">
       <h2 class="product--title" v-text="$page.product.title"></h2>
-      <img :src="$page.product.image" width="250px" />
+      <img :src="$page.product.image" width="400" />
       <span v-html="$page.product.content"></span>
       <button
         class="snipcart-add-item"
@@ -23,7 +23,7 @@ query Product($id: String!) {
     path
     price
     title
-    image
+    image (width: 100)
     content
   }
 }
