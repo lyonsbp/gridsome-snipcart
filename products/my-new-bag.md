@@ -1,5 +1,5 @@
 ---
-title: My new bag
+title: Changed title
 image: /uploads/surprised-pika.png
 price: 99
 tags:
