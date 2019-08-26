@@ -6,7 +6,7 @@
       </strong>
       <nav class="nav">
         <g-link class="nav__link" to="/store">Store</g-link>
-        <a href="#" class="nav__link snipcart-checkout">Cart</a>
+        <g-link href="#" class="nav__link snipcart-checkout">Cart</g-link>
       </nav>
     </header>
     <slot />
@@ -20,6 +20,18 @@ query {
   }
 }
 </static-query>
+
+<script>
+export default {
+  created() {
+    document.addEventListener('snipcart.ready', function() {
+      Snipcart.subscribe('item.added', item => {
+        console.log(item, 'added')
+      })
+    })
+  }
+}
+</script>
 
 <style>
 body {

@@ -11,6 +11,7 @@ query Products {
       node {
         id
         title
+        tags
         path
         price
         image (width: 100)

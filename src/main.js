@@ -3,16 +3,11 @@
 
 import DefaultLayout from '~/layouts/Default.vue'
 import '~/assets/snipcart-styles.css'
+import '~/assets/tailwind-setup.css'
 
 export default function(Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
-
-  head.link.push({
-    rel: 'stylesheet',
-    type: 'text/css',
-    href: 'https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css'
-  })
 
   head.script.push({
     src: 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js',
@@ -25,5 +20,11 @@ export default function(Vue, { router, head, isClient }) {
     body: true,
     id: 'snipcart',
     'data-api-key': process.env.GRIDSOME_SNIPCART_API_KEY
+  })
+
+  head.link.push({
+    rel: 'stylesheet',
+    type: 'text/css',
+    href: 'https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css'
   })
 }
