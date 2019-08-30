@@ -23,7 +23,7 @@ query {
 
 <script>
 export default {
-  created() {
+  mounted() {
     document.addEventListener('snipcart.ready', function() {
       Snipcart.subscribe('item.added', item => {
         console.log(item, 'added')
