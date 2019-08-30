@@ -1,17 +1,19 @@
 <template>
   <section>
     <h2>Our other products</h2>
-    <carousel :per-page="2" :navigate-to="index">
-      <slide
-        v-for="{node} in $static.products.edges"
-        v-if="$route.path !== node.path"
-        :key="node.id"
-        @slideclick="$router.push(node.path)"
-      >
-        <img :src="node.image" width="200" />
-        {{node.title}}
-      </slide>
-    </carousel>
+    <ClientOnly>
+      <carousel :per-page="2" :navigate-to="index">
+        <slide
+          v-for="{node} in $static.products.edges"
+          v-if="$route.path !== node.path"
+          :key="node.id"
+          @slideclick="$router.push(node.path)"
+        >
+          <img :src="node.image" width="200" />
+          {{node.title}}
+        </slide>
+      </carousel>
+    </ClientOnly>
   </section>
 </template>
 
@@ -34,11 +36,16 @@ query Products {
 </static-query>
 
 <script>
-import { Carousel, Slide } from 'vue-carousel'
 export default {
   components: {
-    Carousel,
-    Slide
+    Carousel: () =>
+        import ('vue-carousel')
+        .then(m => m.Carousel)
+        .catch(),
+      Slide: () =>
+        import ('vue-carousel')
+        .then(m => m.Slide)
+        .catch()
   },
   data() {
     return {
