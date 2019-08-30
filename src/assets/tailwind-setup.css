@@ -12,4 +12,5 @@ a {
 }
 button {
   background-color: theme('colors.blue.500');
+  padding: 0 5px;
 }

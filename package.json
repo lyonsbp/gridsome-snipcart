@@ -13,6 +13,7 @@
     "gridsome-plugin-netlify-cms": "^1.0.7",
     "gridsome-plugin-tailwindcss": "^2.2.21",
     "netlify-cms": "^2.9.5",
-    "tailwindcss": "^1.0.4"
+    "tailwindcss": "^1.0.4",
+    "vue-carousel": "^0.18.0"
   }
 }
