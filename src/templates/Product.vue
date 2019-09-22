@@ -1,7 +1,7 @@
 <template>
   <div>
     <Layout>
-      <div class="product--container">
+      <div class="product--container max-w-sm rounded overflow-hidden shadow-lg">
         <h1 class="product--title" v-text="$page.product.title"></h1>
         <img :src="$page.product.image" width="400" />
         <span v-html="$page.product.content"></span>
@@ -41,6 +41,16 @@ export default {
     title: String,
     img: String
   },
+  data() {
+    return {
+      myThing: 'yo'
+    }
+  },
+  methods: {
+    myMethod() {
+      this.m
+    }
+  },
   metaInfo() {
     return {
       title: this.$page.product.title
@@ -50,4 +60,7 @@ export default {
 </script>
 
 <style>
+.product--container {
+  padding: .5rem;
+}
 </style>

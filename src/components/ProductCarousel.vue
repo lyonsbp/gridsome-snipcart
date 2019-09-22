@@ -13,6 +13,15 @@
           {{node.title}}
         </slide>
       </carousel>
+     <!--  <v-carousel>
+        <v-carousel-item
+          v-for="{node} in $static.products.edges"
+          v-if="$route.path !== node.path"
+          :key="node.id"
+          @click="$router.push(node.path)"
+        >  
+        </v-carousel-item>
+      </v-carousel> -->
     </ClientOnly>
   </section>
 </template>

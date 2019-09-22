@@ -1,6 +1,6 @@
 <template>
   <div class="products">
-    <div v-for="edge in products.edges" class="product--container" :key="edge.node.id">
+    <div v-for="edge in products.edges" class="product--container max-w-sm rounded overflow-hidden shadow-lg" :key="edge.node.id">
       <g-link :to="edge.node.path">
         <img :src="edge.node.image" width="200" />
       </g-link>
@@ -33,8 +33,13 @@ export default {
 </script>
 
 <style>
+.products {
+  display: flex;
+  flex-wrap: wrap;
+}
 .product--container {
-  margin: 1rem 0;
+  margin: .5rem;
+  padding: .5rem;
 }
 .product--price {
 }

@@ -2,12 +2,19 @@
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
 import DefaultLayout from '~/layouts/Default.vue'
+// import 'vuetify/dist/vuetify.min.css'
 import '~/assets/snipcart-styles.css'
 import '~/assets/tailwind-setup.css'
+
+// Vuetify Imports
+import Vuetify from 'vuetify'
 
 export default function(Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
+
+  // Vuetify Setup
+  // Vue.use(Vuetify)
 
   head.script.push({
     src: 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js',
