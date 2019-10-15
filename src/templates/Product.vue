@@ -20,7 +20,7 @@
 </template>
 
 <page-query>
-query Product($id: String!) {
+query Product($id: ID!) {
   product: product(id: $id) {
     id
     path
