@@ -16,4 +16,8 @@ collections:
       - { label: 'Image', name: 'image', widget: 'image' }
       - { label: 'Price', name: 'price', widget: 'number' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: 'tags', name: 'tags', , widget: 'list' }
+      - { label: 'tags', name: 'tags', widget: 'list' }
+      - label: 'Quantity'
+        name: 'quantity'
+        widget: 'list'
+        default: ['25', '50', '100', '200']
