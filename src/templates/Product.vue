@@ -1,22 +1,24 @@
 <template>
-  <div>
-    <Layout>
-      <div class="product--container max-w-sm rounded overflow-hidden shadow-lg">
-        <h1 class="product--title" v-text="$page.product.title"></h1>
-        <img :src="$page.product.image" width="400" />
-        <span v-html="$page.product.content"></span>
-        <button
+  <Layout>
+    <v-card class="product--container" max-width="700px">
+      <img :src="$page.product.image" width="300" />
+      <v-card-title v-text="$page.product.title"></v-card-title>
+      <v-card-subtitle>${{ $page.product.price }}</v-card-subtitle>
+      <v-card-text class="black--text" v-html="$page.product.content"></v-card-text>
+
+      <v-card-actions>
+        <v-btn
           class="snipcart-add-item"
           :data-item-id="$page.product.id"
           :data-item-url="$page.product.path"
           :data-item-name="$page.product.title"
           :data-item-image="$page.product.image"
           :data-item-price="$page.product.price"
-        >Add to Cart</button>
-      </div>
-      <ProductCarousel class="mt-4" />
-    </Layout>
-  </div>
+        >Add to Cart</v-btn>
+      </v-card-actions>
+    </v-card>
+    <ProductCarousel class="mt-4" />
+  </Layout>
 </template>
 
 <page-query>

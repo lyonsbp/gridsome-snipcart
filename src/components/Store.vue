@@ -2,7 +2,8 @@
   <div class="products">
     <v-card 
       v-for="edge in products.edges"
-      class="product--container" 
+      class="product--container"
+      max-width="300px"
       :key="edge.node.id"
     >
       <g-link :to="edge.node.path">
@@ -16,7 +17,7 @@
         <span class="product--price">${{edge.node.price}}</span>
       </v-card-subtitle>
 
-      <v-card-action>
+      <v-card-actions>
         <v-btn
           class="snipcart-add-item"
           :data-item-id="edge.node.id"
@@ -25,7 +26,7 @@
           :data-item-image="edge.node.image"
           :data-item-price="edge.node.price"
         >Add to Cart</v-btn>
-      </v-card-action>
+      </v-card-actions>
     </v-card>
   </div>
 </template>
