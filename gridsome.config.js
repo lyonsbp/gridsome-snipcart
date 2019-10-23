@@ -34,17 +34,17 @@ module.exports = {
       options: {
         publicPath: '/admin'
       }
-    },
-    {
-      use: 'gridsome-plugin-tailwindcss',
-      options: {
-        tailwindConfig: '',
-        purgeConfig: {},
-        presetEnvConfig: {},
-        shouldPurge: true,
-        shouldImport: true,
-        shouldTimeTravel: true
-      }
     }
+    // {
+    //   use: 'gridsome-plugin-tailwindcss',
+    //   options: {
+    //     tailwindConfig: '',
+    //     purgeConfig: {},
+    //     presetEnvConfig: {},
+    //     shouldPurge: true,
+    //     shouldImport: true,
+    //     shouldTimeTravel: true
+    //   }
+    // }
   ]
 }
