@@ -1,11 +1,12 @@
 <template>
   <div class="layout">
     <header class="header">
-      <strong>
+      <strong class="ml-2">
         <g-link to="/">{{ $static.metaData.siteName }}</g-link>
       </strong>
       <nav class="nav">
-        <g-link class="nav__link" to="/store">Store</g-link>
+        <g-link class="nav__link" to="/">Store</g-link>
+        <g-link class="nav__link" to="/about">About</g-link>
         <g-link href="#" class="nav__link snipcart-checkout">Cart</g-link>
       </nav>
     </header>
@@ -43,7 +44,7 @@ body {
 }
 
 .layout {
-  max-width: 760px;
+  max-width: 1080px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;

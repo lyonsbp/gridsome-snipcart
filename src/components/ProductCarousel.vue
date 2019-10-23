@@ -2,7 +2,7 @@
   <section>
     <h2>Our other products</h2>
     <ClientOnly>
-      <carousel :per-page="2" :navigate-to="index">
+      <carousel :per-page="3" :navigate-to="index">
         <slide
           v-for="{node} in $static.products.edges"
           v-if="$route.path !== node.path"
