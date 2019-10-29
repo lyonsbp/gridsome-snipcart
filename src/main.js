@@ -1,20 +1,22 @@
 // This is the main.js file. Import global CSS and scripts here.
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
-import DefaultLayout from '~/layouts/Default.vue'
-// import 'vuetify/dist/vuetify.min.css'
-import '~/assets/snipcart-styles.css'
-import '~/assets/tailwind-setup.css'
-
-// Vuetify Imports
 import Vuetify from 'vuetify'
+import DefaultLayout from '~/layouts/Default.vue'
+import 'vuetify/dist/vuetify.min.css'
+import '~/assets/snipcart-styles.css'
+// import '~/assets/tailwind-setup.css'
 
 export default function(Vue, { router, head, isClient }) {
+  // Vuetify Setup
+  Vue.use(Vuetify)
+
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
-
-  // Vuetify Setup
-  // Vue.use(Vuetify)
+  head.link.push({
+    rel: 'stylesheet',
+    href: 'https://fonts.googleapis.com/icon?family=Material+Icons'
+  })
 
   head.script.push({
     src: 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js',

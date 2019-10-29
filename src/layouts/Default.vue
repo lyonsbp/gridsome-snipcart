@@ -1,6 +1,6 @@
 <template>
-  <div class="layout">
-    <header class="header">
+  <v-app>
+    <header class="header px-4">
       <strong class="ml-2">
         <g-link to="/">{{ $static.metaData.siteName }}</g-link>
       </strong>
@@ -11,8 +11,13 @@
         <g-link href="#" class="nav__link snipcart-checkout">Cart</g-link>
       </nav>
     </header>
-    <slot />
-  </div>
+
+    <v-content>
+      <v-container fluid>
+        <slot />
+      </v-container>
+    </v-content>
+  </v-app>
 </template>
 
 <static-query>
@@ -24,7 +29,9 @@ query {
 </static-query>
 
 <script>
+import Vuetify from "vuetify"
 export default {
+  vuetify: new Vuetify(),
   mounted() {
     document.addEventListener('snipcart.ready', function() {
       Snipcart.subscribe('item.added', item => {
