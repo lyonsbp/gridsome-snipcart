@@ -10,10 +10,10 @@
     >
       <v-card 
         class="product--container"
-        max-width="300px"
+        max-width="400px"
       >
         <g-link :to="edge.node.path">
-          <v-img :src="edge.node.image" height="200px"/>
+          <v-img :src="edge.node.image" max-height="300"/>
         </g-link>
 
         <v-card-title class="product--title">

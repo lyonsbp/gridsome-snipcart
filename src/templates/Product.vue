@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <v-card class="product--container" max-width="700px">
-      <v-img :src="$page.product.image" />
+      <v-img :src="$page.product.image" max-width="600px"/>
       <v-card-title v-text="$page.product.title"></v-card-title>
       <v-card-subtitle>${{ $page.product.price }}</v-card-subtitle>
       <v-card-text class="black--text" v-html="$page.product.content"></v-card-text>
