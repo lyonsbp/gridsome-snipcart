@@ -27,11 +27,11 @@
           <v-btn
             class="snipcart-add-item"
             :to="edge.node.path"
-            :data-item-id="$page.product.id"
+            :data-item-id="edge.node.id"
             :data-item-url="edge.node.path"
-            :data-item-name="$page.product.title"
-            :data-item-image="$page.product.image"
-            :data-item-price="$page.product.price"
+            :data-item-name="edge.node.title"
+            :data-item-image="edge.node.image"
+            :data-item-price="edge.node.price"
           >View More</v-btn>
         </v-card-actions>
       </v-card>
