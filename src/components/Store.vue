@@ -26,6 +26,7 @@
         <v-card-actions>
           <v-btn
             :to="edge.node.path"
+            :data-item-url="edge.node.path"
           >View More</v-btn>
         </v-card-actions>
       </v-card>
