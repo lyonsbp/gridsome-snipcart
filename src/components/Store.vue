@@ -25,7 +25,6 @@
 
         <v-card-actions>
           <v-btn
-            class="snipcart-add-item"
             :to="edge.node.path"
             :data-item-id="edge.node.id"
             :data-item-url="edge.node.path"
