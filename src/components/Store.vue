@@ -1,24 +1,12 @@
 <template>
   <v-row dense>
-    <v-col
-      sm="6"
-      md="4"
-      lg="3"
-      xl="2"
-      v-for="edge in products.edges"
-      :key="edge.node.id"
-    >
-      <v-card 
-        class="product--container"
-        max-width="400px"
-      >
+    <v-col sm="6" md="4" lg="3" xl="2" v-for="edge in products.edges" :key="edge.node.id">
+      <v-card class="product--container" max-width="400px">
         <g-link :to="edge.node.path">
-          <v-img :src="edge.node.image" max-height="300"/>
+          <v-img :src="edge.node.image" max-height="300" />
         </g-link>
 
-        <v-card-title class="product--title">
-          {{ edge.node.title }}
-        </v-card-title>
+        <v-card-title class="product--title">{{ edge.node.title }}</v-card-title>
         <v-card-subtitle>
           <span class="product--price">${{edge.node.price}}</span>
         </v-card-subtitle>
