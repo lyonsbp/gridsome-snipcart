@@ -1,6 +1,6 @@
 ---
 title: Test Product
-image: /uploads/$_57.jpg
+image: /uploads/$_57.webp
 price: 350
 sale: 0
 tags:

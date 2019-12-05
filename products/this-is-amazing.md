@@ -1,6 +1,6 @@
 ---
 title: Battery
-image: /uploads/s-l1600 (9).jpg
+image: /uploads/s-l1600 (9).webp
 price: 9
 sale: 0
 tags:
