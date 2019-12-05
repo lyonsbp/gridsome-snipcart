@@ -1,6 +1,6 @@
 ---
 title: Changed title
-image: /uploads/custom-new-runtz-bag-the-3-5g-1-.jpg
+image: /uploads/420-child-proof-smell-proof-cookies-california.jpg
 price: 99
 sale: 0
 tags:
