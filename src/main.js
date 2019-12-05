@@ -7,7 +7,7 @@ import 'vuetify/dist/vuetify.min.css'
 import '~/assets/snipcart-styles.css'
 // import '~/assets/tailwind-setup.css'
 
-export default function(Vue, { router, head, isClient }) {
+export default function (Vue, { router, head, isClient }) {
   // Vuetify Setup
   Vue.use(Vuetify)
 
@@ -15,12 +15,14 @@ export default function(Vue, { router, head, isClient }) {
   Vue.component('Layout', DefaultLayout)
   head.link.push({
     rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/icon?family=Material+Icons'
+    href: 'https://fonts.googleapis.com/icon?family=Material+Icons',
+    defer: true
   })
 
   head.script.push({
     src: 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js',
-    body: true
+    body: true,
+    defer: true
   })
 
   head.script.push({
@@ -28,12 +30,14 @@ export default function(Vue, { router, head, isClient }) {
     type: 'text/javascript',
     body: true,
     id: 'snipcart',
-    'data-api-key': process.env.GRIDSOME_SNIPCART_API_KEY
+    'data-api-key': process.env.GRIDSOME_SNIPCART_API_KEY,
+    defer: true
   })
 
   head.link.push({
     rel: 'stylesheet',
     type: 'text/css',
-    href: 'https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css'
+    href: 'https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css',
+    defer: true
   })
 }

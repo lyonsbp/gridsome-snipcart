@@ -29,7 +29,8 @@ export default {
     Store
   },
   metaInfo: {
-    title: 'Hello, world!'
+    title: 'Greenlight Electronix',
+    meta: [{ name: 'Description', content: 'Greenlight Electronix Store' }]
   }
 }
 </script>
