@@ -1,6 +1,6 @@
 ---
-title: This is amazing
-image: /uploads/large-1-.jpg
+title: Battery
+image: /uploads/s-l1600 (9).jpg
 price: 9
 sale: 0
 tags:
@@ -8,6 +8,6 @@ tags:
   - three
 quantity:
   - '1'
-type: bag
+type: battery
 ---
 ## _Desc._
