@@ -43,16 +43,6 @@ export default {
     title: String,
     img: String
   },
-  data() {
-    return {
-      myThing: 'yo'
-    }
-  },
-  methods: {
-    myMethod() {
-      this.m
-    }
-  },
   metaInfo() {
     return {
       title: this.$page.product.title

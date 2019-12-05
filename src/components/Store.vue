@@ -12,6 +12,14 @@
         </v-card-subtitle>
 
         <v-card-actions>
+          <button
+            :data-item-id="edge.node.id"
+            :data-item-url="edge.node.path"
+            :data-item-name="edge.node.title"
+            :data-item-image="edge.node.image"
+            :data-item-price="edge.node.price"
+            class="snipcart-add-item d-none"
+          ></button>
           <v-btn
             :to="edge.node.path"
             :data-item-id="edge.node.id"
