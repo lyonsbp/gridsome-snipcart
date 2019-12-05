@@ -1,6 +1,6 @@
 ---
 title: 'New '
-image: /uploads/large-1-.jpg
+image: /uploads/1b+Jungle+boys+(2).jpg
 price: 30
 sale: 0
 tags:
