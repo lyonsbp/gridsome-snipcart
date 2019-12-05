@@ -9,5 +9,6 @@ tags:
 quantity:
   - '1'
 type: battery
+weight: 32
 ---
 ## _Desc._

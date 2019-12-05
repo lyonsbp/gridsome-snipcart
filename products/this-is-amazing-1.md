@@ -10,6 +10,7 @@ tags:
 quantity:
   - '1'
 type: bag
+weight: 12
 ---
 ## _Product Description_
 

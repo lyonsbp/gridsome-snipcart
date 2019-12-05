@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <v-card class="product--container" max-width="700px">
-      <v-img :src="$page.product.image" max-width="600px"/>
+      <v-img :src="$page.product.image" max-width="600px" />
       <v-card-title v-text="$page.product.title"></v-card-title>
       <v-card-subtitle>${{ $page.product.price }}</v-card-subtitle>
       <v-card-text class="black--text" v-html="$page.product.content"></v-card-text>
@@ -14,6 +14,7 @@
           :data-item-name="$page.product.title"
           :data-item-image="$page.product.image"
           :data-item-price="$page.product.price"
+          :data-item-weight="$page.product.weight"
         >Add to Cart</v-btn>
       </v-card-actions>
     </v-card>
@@ -31,6 +32,7 @@ query Product($id: ID!) {
     tags
     image (width: 100)
     content
+    weight
   }
 }
 </page-query>
@@ -53,6 +55,6 @@ export default {
 
 <style>
 .product--container {
-  padding: .5rem;
+  padding: 0.5rem;
 }
 </style>

@@ -8,5 +8,6 @@ tags:
 quantity:
   - '1'
 type: bag
+weight: 57
 ---
 The amazing product

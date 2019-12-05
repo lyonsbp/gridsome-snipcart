@@ -8,6 +8,7 @@ tags:
 quantity:
   - '1'
 type: bag
+weight: 100
 ---
 * hgd
 * fdf

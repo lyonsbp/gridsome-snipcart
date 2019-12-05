@@ -49,3 +49,8 @@ collections:
           - { label: "Bag", value: "bag" }
           - { label: "Label", value: "label" }
           - { label: "Battery", value: "battery" }
+      - label: "Weight (grams)"
+        name: "weight"
+        widget: "number"
+        min: 0
+        default: 1

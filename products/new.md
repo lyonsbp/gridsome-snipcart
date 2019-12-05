@@ -11,5 +11,6 @@ tags:
 quantity:
   - '1'
 type: bag
+weight: 212
 ---
 # *Sup*
