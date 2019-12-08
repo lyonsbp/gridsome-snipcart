@@ -82,9 +82,9 @@ collections:
         widget: 'number'
         min: 0
         default: 1
-  - name: 'bags'
-    label: 'Bags'
-    folder: 'products/bags'
+  - name: 'batteries'
+    label: 'Batteries'
+    folder: 'products/batteries'
     create: true
     slug: '{{slug}}'
     fields:
