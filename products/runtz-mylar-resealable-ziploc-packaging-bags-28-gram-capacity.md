@@ -1,7 +1,7 @@
 ---
 title: Runtz Mylar Resealable Ziploc Packaging Bags 28 Gram Capacity
 image: /uploads/714C9FtBY1L._AC_SL1500_.webp
-price: -1
+price: 2
 sale: '0'
 tags:
   - Mylar
