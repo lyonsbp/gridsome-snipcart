@@ -82,3 +82,61 @@ collections:
         widget: 'number'
         min: 0
         default: 1
+  - name: 'bags'
+    label: 'Bags'
+    folder: 'products/bags'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - label: 'Title'
+        name: 'title'
+        widget: 'string'
+      - label: 'Featured Image'
+        name: 'image'
+        widget: 'image'
+        allow_multiple: true
+        media_library:
+          config:
+            multiple: true
+      - label: 'Secondary Image'
+        name: 'image-1'
+        widget: 'image'
+        allow_multiple: true
+        media_library:
+          config:
+            multiple: true
+      - label: 'Secondary Image'
+        name: 'image-2'
+        widget: 'image'
+        allow_multiple: true
+        media_library:
+          config:
+            multiple: true
+      - label: 'Secondary Image'
+        name: 'image-3'
+        widget: 'image'
+        allow_multiple: true
+        media_library:
+          config:
+            multiple: true
+      - label: 'Secondary Image'
+        name: 'image-4'
+        widget: 'image'
+        allow_multiple: true
+        media_library:
+          config:
+            multiple: true
+      - label: 'Body'
+        name: 'body'
+        widget: 'markdown'
+      - label: 'tags'
+        name: 'tags'
+        widget: 'list'
+      - label: 'Price'
+        name: 'price'
+        widget: 'number'
+      - label: 'Weight (grams)'
+        name: 'weight'
+        widget: 'number'
+        min: 0
+        default: 1
