@@ -23,8 +23,8 @@ collections:
           config:
             multiple: true
       - label: 'Secondary Image'
-        name: 'image'
-        widget: 'image-1'
+        name: 'image-1'
+        widget: 'image'
         allow_multiple: true
         media_library:
           config:
